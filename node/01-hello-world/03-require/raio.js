@@ -4,7 +4,7 @@ module.exports = (idade) => {
     if(idade >= 18)
     return "Você é maior de idade"
     else 
-    return "Você é de menor, safado"
+    return "Você é de menor"
 }
 
     // module.exports = (raio) => {
