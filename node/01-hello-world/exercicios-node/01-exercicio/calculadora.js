@@ -3,11 +3,11 @@ const calculadora = {
         return a + b
     },
     somarNumeros(...numeros) {
-        let soma = 0
-        for (let i = 0; i < numeros.length; i++) {
-            soma += numeros[i]
-        }
-        return soma
+       return numeros.reduce(
+            (atual, proximo) => {
+                return atual + proximo
+            }
+        )
     },
     sub(a, b) {
         return a - b
