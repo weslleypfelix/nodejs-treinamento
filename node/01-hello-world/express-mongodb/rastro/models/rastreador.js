@@ -20,7 +20,7 @@ const rastreadorSchema = Schema( //Estou definindo a colecao.
 //model() cria a colecao, ou seja, a tabela do banco
 // Devolve uma funcao *pesquisar dps* É possível instanciar uma nova funcao. POde ser que seja uma funcao
 //pode ser que nao seja.
-const Rastreador = mongoose.model('rastreadores' /*nome da colecao 1ºparametro*/, rastreadorSchema)
+const Rastreador = mongoose.model('rastreadores'/*nome da colecao 1ºparametro*/, rastreadorSchema)
 
 return Rastreador;
 }

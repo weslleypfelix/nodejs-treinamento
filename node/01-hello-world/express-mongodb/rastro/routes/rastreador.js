@@ -21,4 +21,22 @@ app.post( //onde estará essa funcao ? no rastreador.js do controllers
     '/rastreador',
         app.controllers.rastreador.cadastrar // Estou passando a funcao
     );
+
+    //criando rota para alterar o rastreador
+    //Put
+
+    app.put(
+        '/rastreador',
+        app.controllers.rastreador.alterar
+    )
+
+    //Rota para excluir dados do rastreador
+    //DELETE
+
+    app.delete(
+        '/rastreador/:codigoRastreador',
+        app.controllers.rastreador.excluir
+    )
+
+
 }
